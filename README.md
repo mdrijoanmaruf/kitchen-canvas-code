@@ -1,73 +1,76 @@
-# Welcome to your Lovable project
 
-## Project info
+# Recipe Book App
 
-**URL**: https://lovable.dev/projects/9f44fd4d-80f3-4692-ab93-b549c6da0426
+A user-friendly Recipe Book App where users can manage their recipes, discover recipes from others, add recipes to a wishlist, and like recipes. The app features a dynamic top recipes section based on likes, providing a simple and engaging platform for food enthusiasts.
 
-## How can I edit this code?
+## Live Site URL
+[Recipe Book App](https://recipe-book-app.netlify.app)
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- **User Authentication:** Secure login and registration system with Google OAuth integration.
+- **Recipe Management:** Create, read, update, and delete your personal recipe collection.
+- **Discover Recipes:** Browse and search for recipes shared by other users, filtered by cuisine type.
+- **Responsive Design:** Beautiful UI that works seamlessly on mobile, tablet, and desktop devices.
+- **Like System:** Show appreciation for recipes and help others discover popular dishes.
+- **Top Recipes:** Discover trending recipes based on the number of likes.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9f44fd4d-80f3-4692-ab93-b549c6da0426) and start prompting.
+## Technologies Used
 
-Changes made via Lovable will be committed automatically to this repo.
+### Frontend
+- React with TypeScript
+- React Router for navigation
+- Tailwind CSS for styling
+- Shadcn UI components
+- React Query for data fetching
+- Context API for state management
 
-**Use your preferred IDE**
+### Backend
+- Node.js with Express
+- MongoDB for database
+- JWT for authentication
+- Mongoose ODM
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/recipe-book-app.git
+   cd recipe-book-app
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. Set up environment variables:
+   Create a `.env` file in the root directory with the following variables:
+   ```
+   REACT_APP_API_URL=http://localhost:5000/api
+   REACT_APP_FIREBASE_API_KEY=your-firebase-api-key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your-firebase-auth-domain
+   REACT_APP_FIREBASE_PROJECT_ID=your-firebase-project-id
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your-firebase-storage-bucket
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-firebase-messaging-sender-id
+   REACT_APP_FIREBASE_APP_ID=your-firebase-app-id
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-**Edit a file directly in GitHub**
+## Contributing
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-**Use GitHub Codespaces**
+## License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/9f44fd4d-80f3-4692-ab93-b549c6da0426) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License - see the LICENSE file for details.
